@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #4b6cb7, #182848);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Centered Glassmorphism Card */
+.login {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  color: white;
+  text-align: center;
+}
+
+/* Title Styling */
+h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Labels */
+label {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Input Fields */
+select,
+input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s ease-in-out;
+}
+
+/* Select & Input Hover Effect */
+select:hover,
+input:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Submit Button */
+.btn {
+  background: #ff9800;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #ff5722;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+  .login {
+    width: 90%;
+    padding: 20px;
+  }
+}
